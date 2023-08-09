@@ -1,4 +1,4 @@
-!(../readme_asset/capture.PNG)
+!(readme_asset/capture.PNG)
 <p align="center"><strong>Website Undangan Digital - diundang</strong></p>
 <p align="center"><sub>Laravel Livewire</sub></p>
 <p align="center"><sub>Jangan lupa tekan 🌟</sub></p>
