@@ -1,0 +1,117 @@
+:root {
+    --main : #222d3f;
+    --second: #415262;
+    --third:#cde9fb;
+    --white:#ffffff;
+}
+.promote {
+    background-color: var(--main);
+}
+.cover{
+    background-color: var(--white);
+    color: var(--second);
+}
+.cover .button {
+    background-color: var(--main);
+    color: white;
+}
+.botBar{
+    color: white;
+    background-color: var(--main);
+}
+.botbar .toggleAudioIcon img {
+    fill: white;
+}
+.home {
+    background-color: var(--white);
+}
+.home .content-home .countdown{
+    color: var(--white);
+}
+.home .content-home .header-content p{
+    color: var(--second);
+}
+.home .content-home .countdown .box {
+    background-color: var(--main);
+}
+.couple .flex-couple .card-couple {
+    background-color: var(--white);
+    border: 7px solid var(--main);
+}
+.surah{
+    color: white;
+    background-color: var(--main);
+}
+.event{
+    background-color: var(--third);
+}
+.event .grid-event .card-event{
+    border: 5px solid var(--main);
+    background-color: var(--white);
+}
+.event .grid-event .card-event .background h2{
+    color: var(--main);
+}
+.event .grid-event .card-event .background .icon-header img {
+    background-color: var(--main);
+}
+.event .grid-event .card-event .background .icon{
+    background-color: var(--main);
+}
+.event .grid-event .card-event .background p:nth-child(3){
+    color: var(--second);
+}
+.wavefooter {
+    background-color: var(--third);
+}
+.event .wishes .reply {
+    border: 1px solid var(--second);
+    background-color: var(--white);
+}
+.event .wishes .reply p:nth-child(1) {
+    color: var(--main);
+}
+.event .wishes .form {
+    background-color: var(--white);
+}
+.event .wishes .form input{
+    border: 1px solid var(--main) ;
+}
+.event .wishes .form button{
+    color: white;
+    background-color: var(--main);
+}
+.event .wishes .form textarea{
+    border: 1px solid var(--main);
+}
+.event .wishes .wishes-comment .card-comment::after{
+    box-shadow: 0 0 0 0.2px black;
+}
+.event .wishes .wishes-comment .card-comment button{
+    color: red;
+}
+.event .wishes .wishes-comment .card-comment .replyComment {
+    border-left: 1px solid var(--third);
+}
+.nama{
+    color: var(--main);
+}
+.status{
+    color: var(--white);
+}
+.create-at{
+    color: grey;
+}
+.event .wishes .wishes-comment .card-comment .header-comment .Hadir{
+    background-color: #34be82;
+}
+.event .wishes .wishes-comment .card-comment .header-comment .Tidak{
+    background-color:rgb(233, 49, 49);
+}
+.lineLast{
+    background-color: var(--third);
+}
+.doa{
+    color: white;
+    background-color: var(--main);
+}

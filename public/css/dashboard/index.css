@@ -1,0 +1,24 @@
+.contentMainbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contentMainbar .card {
+    width: 200px;
+    color: white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+}
+.contentMainbar .card .number {
+    font-size: 60px;
+    font-family: rubik;
+}
+.contentMainbar .card .labelCard {
+    font-family: popin;
+    width: 100%;
+    border-top: 1px solid white;
+}

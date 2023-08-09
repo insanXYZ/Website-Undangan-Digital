@@ -1,0 +1,53 @@
+.contentMainbar {
+    width: 100%;
+}
+form#post {
+    margin: 50px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: popin;
+}
+form .grid {
+    width: 100%;
+}
+form .grid>div {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    padding: 5px 0;
+    grid-template-columns: repeat(2,1fr);   
+}
+form .grid>div:nth-child(odd) {
+    background-color: whitesmoke;
+}
+form .grid>textarea {
+    padding: 5px;
+    font-family: rubik;
+    box-sizing: border-box;
+    width: 80%;
+    display: block;
+    height: 50px;
+    margin: auto;
+}   
+form input {
+    padding: 5px;
+    box-sizing: border-box;
+}
+form h3 {
+
+    margin: 10px 0;
+    font-family: rubik;
+    text-align: center;
+}
+form button {
+    width: 80%;
+    cursor: pointer;
+    background-color: greenyellow;
+    padding: 4px 0;
+    margin:20px  auto;
+    outline: none;
+    border: none;
+}

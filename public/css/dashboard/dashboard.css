@@ -1,0 +1,86 @@
+* , html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.container .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 270px;
+    background-color: #2E8A99;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.container .sidebar .header {
+    text-align: center;
+    background-color: black;
+}
+.container .sidebar .header img {
+    width: 180px;
+}
+.container .sidebar .flexBeetween {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .sidebar .flexMenu {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.container .sidebar  form {
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+.container .sidebar button {
+    width: 85%;
+    padding: 5px 0;
+    font-family: popin;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.container .sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 8px 5px;
+    font-family: popin ;
+    transition: .3s;
+}
+.container .sidebar a:hover {
+    background-color: #65c4d3;
+}
+.container .sidebar a img {
+    margin-right: 5px;
+    width: 25px;
+}
+.container .mainbar {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container .mainbar .topbar {
+    font-family: popin;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: #9DB2BF;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.container .mainbar .topbar .clock {
+    padding: 5px;
+}

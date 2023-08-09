@@ -1,0 +1,9 @@
+body {
+    --width:85%;
+    --border:5px;
+    --sizeStandard:34px ; 
+    --sizeMiddle:25px;
+    --sizeSmall:16px;
+    --sizeInput:13px;
+    --sizeBig:60px;
+}

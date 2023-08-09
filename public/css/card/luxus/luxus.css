@@ -1,0 +1,689 @@
+.container {
+    display: none;
+    overflow-x: hidden;
+    position: relative;
+}
+audio {
+    display: none;
+}
+.controllerAudio {
+    z-index: 99;
+    position: fixed;
+    width: 30px;
+    bottom: 20px;
+    right: 20px;
+}
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+}
+.paginationWrapper ul {
+    display: flex;
+    gap: 5px;
+}
+.paginationWrapper ul li ,
+.paginationWrapper ul li span,
+.paginationWrapper ul li button{
+    font-family: popin;   
+    font-size: var(--sizeSmall);
+}
+.paginationWrapper ul li button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: blue;
+}
+.cover {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    opacity: 1;
+    transition: opacity 1s ease;
+    justify-content: center;
+}
+.cover::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 150px;
+    top: 0;
+}
+.cover::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+}
+.cover .flexContentCover {
+    position: relative;
+    z-index: 12;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.cover .flexContentCover div.top {
+    margin-top: 10px;
+    font-size: var(--sizeStandard);
+    font-family: popin;
+}
+.cover .flexContentCover div.name {
+    font-size: var(--sizeMiddle);
+    font-family:gv;
+}
+.cover .flexContentCover .bottom .to {
+    font-family: popin ;
+    font-size: var(--sizeSmall);
+}
+.cover .flexContentCover div.bottom .button {
+    padding: 5px 3px;
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-family: popin;
+    font-size: var(--sizeSmall);
+    width: 200px;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+.headerPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.headerPage::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+}
+.headerPage .headerContent {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+.headerPage .headerContent div {
+    mix-blend-mode: difference;
+}
+.headerPage .headerContent div:nth-child(1) {
+    font-family: gv;
+    font-size: var(--sizeStandard);
+    margin-bottom: 10px;
+}
+.headerPage .headerContent div:nth-child(2) {
+    font-family: popin;
+    font-size: var(--sizeSmall);
+}
+.surah {
+    padding: 100px 0;
+    width: 100%;
+}
+.surah .surahQuran {
+    width: var(--width);
+    font-family: latif;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: var(--sizeStandard);
+}
+.surah .surahContent {
+    font-family: popin;
+    width: var(--width);
+    margin: auto;
+    font-size: var(--sizeSmall);
+    text-align: center;
+}
+.couple {
+    padding-bottom:100px ;
+    width: 100%;
+}
+.couple .headerCouple {
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+    font-family: swash;
+    font-style: italic;
+    font-size: var(--sizeStandard) ;
+}
+.couple .headerCouple::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    top: 0 ;
+    left: 0;
+}
+.couple .flexCouple {
+    width: var(--width);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.couple .flexCouple .cardCouple {
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+.couple .flexCouple .middleCard {
+    font-size: var(--sizeStandard);
+    font-family: kley;
+}
+.couple .flexCouple .cardCouple img {
+    padding: 3px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+    width: 200px;
+}
+.couple .flexCouple .cardCouple div {
+    font-size: var(--sizeSmall);
+    font-family: popin;
+}
+.couple .flexCouple .cardCouple .name {
+    font-family: swash;
+    font-size: var(--sizeStandard);
+    margin: 8px 0;
+}
+.event {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.event .cardEvent {
+    padding: 25px 0;
+    width: var(--width);
+    margin: 0 auto 25px;
+    border-radius: var(--border);
+    text-align: center;
+}
+.event .cardEvent img {
+    width: 35px;
+}
+.event .cardEvent p {
+    font-family: popin;
+    font-size: var(--sizeMiddle);
+}
+.event .flexEvent {
+    display: flex;
+    width: var(--width);
+    margin: auto;
+    gap: 5px;
+    justify-content: space-between;
+}
+.event .flexEvent .cardFlexEvent {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.event .flexEvent .cardFlexEvent img  {
+    width: 35px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.event .flexEvent .cardFlexEvent .headerCard {
+    font-family: swash;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: var(--sizeStandard);
+}
+.event .flexEvent .cardFlexEvent .placeCard {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.event .flexEvent .cardFlexEvent div {
+    font-family: popin;
+    width: var(--width);
+    margin: auto;
+    font-size: var(--sizeSmall);
+}
+.location {
+    padding: 100px 0;
+    width: var(--width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location img {
+    width: 35px;
+    margin-bottom: 15px;
+}
+.location .headerLocation {
+    font-family: swash;
+    margin-bottom: 50px;
+    font-size: var(--sizeStandard);
+}
+.location iframe {
+    width: 100%;
+    height: 480px;
+    margin: auto;
+}
+.story {
+    width: 100%;
+    padding: 100px 0;
+}
+.story .headerStory {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.story .headerStory img {
+    width: 35px;
+    margin-bottom: 15px;
+}
+.story .headerStory span {
+    font-family: swash;
+    font-size: var(--sizeStandard);
+    margin-bottom: 50px;
+}
+.story .carousel {
+    width: 40%;
+    margin: auto;
+}
+.story .cardStory {
+    width: 100%;
+    margin: 0 10px;
+    border-radius: var(--border);
+    gap: 10px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.story .cardStory p {
+    width: 100%;
+    word-wrap: break-word;
+    font-size: var(--sizeSmall);
+    font-family: popin ;
+}
+.story .carousel .cardStory img {
+    width: 100%;
+}
+.gift {
+    position: relative;
+    width: var(--width);
+    border: var(--border);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+    text-align: center;
+    margin: 100px auto 100px;
+    padding: 25px 0 ;
+    text-align: center;
+}
+.gift img {
+    width: 35px;
+}
+.gift .headerGift {
+    font-size: var(--sizeStandard);
+    font-family: swash;
+    margin-bottom: 20px;
+}
+.gift .mainGift {
+    font-size: var(--sizeSmall);
+    font-family: popin;
+}
+.gift .envelope {
+    width: 60px;
+    cursor: pointer;
+    bottom: -70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.modalGift { 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border);
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.modalGift .contentModal {
+    padding: 15px;
+    width: 580px;
+    border-radius: var(--border);
+}
+.modalGift .contentModal .cardModal {
+    background-image: url('../../../imageModel/luxus/cardModal.png');
+    width: 100%;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+.modalGift .contentModal .cardModal .buttonClose {
+    position: absolute;
+    right: 4px;
+    cursor: pointer;
+    top: 0;
+    font-size: var(--sizeStandard);
+    font-weight: bold;
+}
+.modalGift .contentModal .content {
+    margin-left: 10px;
+    font-size: var(--fontSmall);
+    font-family: popin;
+}
+.modalGift .contentModal .copyNumber {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: var(--fontSmall);
+    font-weight: bold;
+    font-family: popin;
+    margin-bottom: 10px;
+}
+.modalGift .contentModal .cardModal .content>img {
+    width: 120px;
+}
+.modalGift .cardModal .content .copyNumber img {
+    width: 30px;
+    margin-left: 10px;
+}
+.moment {
+    width: 100%;
+    padding: 100px 0;
+}
+.moment .headerMoment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: swash;
+    font-size: var(--sizeStandard);
+    margin-bottom: 20px;
+}
+.moment .headerMoment img {
+    width: 35px;
+    margin-bottom: 15px;
+}
+.moment .gridMoment {
+    width: var(--width);
+    margin: auto;
+    columns: 4;
+    column-gap: 25px;
+}
+.moment .gridMoment .box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.moment .gridMoment .box img {
+    max-width: 100%;
+    border-radius: var(--border);
+}
+.form{
+    width: 100%;
+    padding: 100px 0 10px;
+}
+.form .headerForm {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--sizeStandard);
+    font-family: swash;
+    margin: auto;
+    position: relative;
+    padding-bottom: 5px;
+}
+.form .headerForm::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+.form .headerForm img {
+    margin-bottom: 5px;
+    width: 30px;
+}
+.form .inputForm .cardReply {
+    width: var(--width);
+    margin: 10px auto ;
+    outline: none;
+    padding:5px;
+    font-family: popin;
+    font-size: var(--sizeInput);
+    box-sizing: border-box;
+}
+.form .inputForm .cardReply .nameReply {
+    font-weight: bold;
+    width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+.form .inputForm form {
+    width: var(--width);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form .inputForm input {
+    outline: none;
+    font-family: popin;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form .inputForm textarea {
+    outline: none;
+    font-family: popin;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form .inputForm select {
+    font-family: popin;
+    width: 100%;
+    outline: none;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form .inputForm button {
+    width: 80px;
+    padding: 3px 5px;
+    border: none;
+    text-align: center;
+    font-size: var(--sizeSmall);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: popin;
+}
+.paginationWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.paginationWrapper ul {
+    display: flex;
+    gap: 5px;
+}
+.paginationWrapper ul li {
+    font-size: var(--sizeSmall);
+    font-family: popin;
+}
+.comment {
+    padding: 20px 0 100px;
+    width: var(--width);
+    margin: auto;
+}
+.comment .info {
+    width: 100%;
+    text-align: center;
+    font-size: var(--sizeSmall);
+    font-family: popin;
+}
+.comment .messageComment {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.comment .messageComment .headerMessage {
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    font-family: popin;
+    font-weight: bold;
+    font-size: var(--sizeSmall);
+    margin-bottom: 5px;
+}
+.comment .messageComment .headerMessage .nameMessage {
+    word-break: break-word;
+}
+.comment .messageComment .headerMessage img {
+    width: 15px;
+    margin-left: 10px;
+}
+.comment .messageComment .bodyMessage {
+    margin-bottom: 5px;
+    width: 100%;
+    word-break: break-word;
+    font-family: popin;
+    font-size: var(--sizeInput);
+}
+.comment .messageComment .footerMessage {
+    display: flex;
+    font-family: popin;
+    font-size: var(--sizeInput);
+}
+.comment .messageComment .dateMessage {
+    font-weight: lighter;
+}
+.comment .messageComment .replyButton {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.reply {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.reply .replyComment {
+    width: 95%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.reply .replyComment .headerMessage {
+    width: 100%;
+    word-break: break-word;
+    font-family: popin;
+    font-weight: bold;
+    font-size: var(--sizeSmall);
+    margin-bottom: 5px;
+}
+.reply .replyComment .bodyMessage {
+    margin-bottom: 5px;
+    width: 100%;
+    word-break: break-word;
+    font-family: popin;
+    font-size: var(--sizeInput);
+}
+.reply .replyComment .footerMessage {
+    font-family: popin;
+    font-size: var(--sizeInput);
+    font-weight: lighter;
+}
+.footer {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    font-family: popin;
+    font-size: var(--sizeSmall);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+.footer .contentFooter {
+    width: var(--width);
+    font-family: popin;
+    position: relative;
+    z-index: 9;
+}
+.footer .brideName {
+    font-family: gv;
+    margin-top: 15px;
+    font-size: var(--sizeStandard);
+}
+.promote {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promote img {
+    margin-bottom: -50px;
+    width: 300px;
+}
+.promote div {
+    color: white;
+    font-size: var(--sizeBig);
+    font-family: lato;
+}
+@media screen and (max-width : 880px) {
+    .surah .surahContent {
+        font-size: var(--sizeInput);
+    }
+    .couple .flexCouple {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .event .flexEvent {
+        gap: 25px;
+        flex-direction: column;
+    }
+    .moment .gridMoment  {
+        columns: 2;
+    }
+    .event .cardEvent p {
+        font-size: var(--sizeSmall);
+    }
+    .modalGift .contentModal {
+        width: 90%;
+    }
+    .promote img {
+        width: 60%;
+    }
+    .story .carousel {
+        width: var(--width);
+    }
+}
+

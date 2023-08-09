@@ -1,0 +1,89 @@
+:root{
+    --main:#415262;
+    --white:#ffffff;
+}
+.cover::before{
+    background: linear-gradient(180deg, var(--main) 3%, rgba(255, 255, 255, 0) 100%);
+}
+.footer::after {
+    background: linear-gradient(0deg, var(--main) 3%, rgba(255, 255, 255, 0) 100%);
+}
+.cover::after {
+    background: linear-gradient(0deg, var(--main) 3%, rgba(255, 255, 255, 0) 100%);
+}
+.cover .flexContentCover div {
+    color:white;
+}
+.cover .flexContentCover div.bottom .button {
+    background-color: var(--main);
+    border: 2px solid white;
+}
+.headerPage::after {
+    background: linear-gradient(0deg, var(--main) 10%, rgba(255, 255, 255, 0) 100%);
+}
+.couple .headerCouple::after {
+    background: linear-gradient(180deg, var(--main) 10%, rgba(255, 255, 255, 0) 100%);
+}
+.comment .messageComment {
+    border-bottom: 1px solid var(--main);
+}
+.surah {
+    color: var(--white);
+    background-color: var(--main);
+}
+.event {
+    background-color: var(--main);
+}
+.event .cardEvent {
+    background-color: whitesmoke;
+}
+.event .flexEvent .cardFlexEvent {
+
+    background-color: whitesmoke;
+}
+.story {
+    background-color: var(--main);
+}
+.story .cardStory {
+    background-color: #ffffff;
+}
+.story .headerStory span {
+    color: white;
+}
+.gift {
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+}
+.modalGift { 
+    background-color: rgba(65, 82, 98, 0.5);
+}
+.modalGift .contentModal {
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+}
+.moment {
+    background-color: var(--main);
+}
+.moment .headerMoment {
+    color: var(--white);
+}
+.form .headerForm::after {
+    background-color: rgba(65, 82, 98, 0.5);
+}
+.form .boxReply {
+    background-color: white;
+    border: 1px solid var(--main);
+}
+.form .inputForm .buttonSubmit {
+    color: white;
+    background-color: var(--main);
+}
+.promote {
+    background-color: var(--main);
+}
+.form .inputForm .cardReply {
+    border: 1px solid var(--main);
+}
+.event .flexEvent .cardFlexEvent .headerCard {
+    border-bottom: 1px solid var(--main);
+}

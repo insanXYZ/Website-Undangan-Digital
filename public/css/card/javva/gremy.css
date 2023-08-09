@@ -1,0 +1,77 @@
+:root{
+    --main:#686850;
+    --second:#7B7B7B;
+}
+
+.mainPage {
+    background-color: white;
+}
+.cover .context {
+    background-color: var(--main);
+}
+.countdown {
+    background-color: var(--main);
+}
+.mainPage .hero .countdown .countdown-box .box * {
+    color: white;
+}
+.mainPage .hero .countdown .tanggal {
+    border: 2px solid white;
+    color: white;
+}
+.bgCardBride {
+    background-color: var(--main);
+}
+.carousel {
+    background-color: var(--main);
+}
+.cover .buttonCover {
+    background-color: white;
+    color: var(--second);
+    border: 1px solid var(--second);
+}
+.wrapper-timeline {
+    background-color: var(--main);
+}
+.kalender .second-countdown {
+    border: 5px solid var(--main);
+}
+.timeline .element::after {
+    background-color: var(--main);
+    border: 5px solid white;
+}
+.card-comment {
+    background-color: var(--main);
+}
+.footer {
+    background-color: var(--main);
+}
+.live {
+    background-color: var(--second);
+    color: white;
+}
+.live a {
+    background-color: white;
+    color: var(--second);
+}
+.donate .wrap-donate{
+    background-color: var(--main);
+}
+.wishes .button {
+    background-color: var(--second);
+    color: white;
+}
+.carousel .content-carousel {
+    color: white;
+}
+.kalender .akad {
+    border-right: 1px solid var(--main);
+}
+.promote {
+    background-color: var(--second);
+}
+@media screen and (max-width : 900px){
+    .kalender .akad {
+        border-right: none;
+    }
+}
